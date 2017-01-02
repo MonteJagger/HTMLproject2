@@ -17,7 +17,7 @@ body {
 
 /* Header */
 .header {
-    background: url(../../Images/bg.jpg) no-repeat center center fixed;
+    background: url(../Images/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 800px;
     text-align: center;
@@ -36,6 +36,11 @@ body {
     margin-bottom: 80px;
 }
 
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
 @media (min-width:850px) {
     .header h1 {
         font-size: 120px;
@@ -50,6 +55,10 @@ body {
     background-color: black;
     border: black solid 1px;
     padding: 10px 0 10px 0;
+    width: 240px;
+    margin: auto;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .btn:hover {

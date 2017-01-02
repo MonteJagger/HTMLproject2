@@ -73,18 +73,28 @@ body {
     margin: 0 auto;
     padding: 30px 0;
     text-align: center;
+    background-color: black;
 }
 
+.nav li {
+    display: inline;
+    color: white;;
+}
 
 /* Main */
 .main .container {
     margin: 80px auto;
-    color: white;
+}
+.main img {
+    float: left;
+    height: 150px;
+    padding: 30px 50px 10px 0;
 }
 
 
 /* Jumbotron */
 .jumbotron {
+    background: url(../Images/jumbotron_bg.jpg) no-repeat center center fixed;
     height: 600px;
     text-align: right;
 }
@@ -92,6 +102,18 @@ body {
 .jumbotron .container {
     position: relative;
     top: 220px;
+}
+
+.jumbotron .second_bg_white {
+    color: white;
+}
+.jumbotron .join_link {
+    background-color: black;
+    color: white;
+    padding: 0 10px 0 10px;
+    width: 100px;
+    text-align: center;
+    float: right;
 }
 
 

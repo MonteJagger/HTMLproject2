@@ -14,14 +14,11 @@ body {
     padding: 0 10px;
 }
 
-
-/* Header */
 .header {
-    background: url(../Images/bg.jpg) no-repeat center center fixed;
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center;
     background-size: cover;
     height: 800px;
     text-align: center;
-    color: white;
 }
 
 .header .container {
@@ -30,15 +27,12 @@ body {
 }
 
 .header h1 {
-    font-size: 80px;
+    color: #fff;
     line-height: 100px;
+    font-size: 80px;
     margin-top: 0;
     margin-bottom: 80px;
-}
-
-.header a {
-    text-decoration: none;
-    color: white;
+    text-transform: uppercase;
 }
 
 @media (min-width:850px) {
@@ -47,61 +41,67 @@ body {
     }
 }
 
+
+
 .header p {
+    color: #fff;
     font-weight: 500;
     letter-spacing: 8px;
     margin-bottom: 40px;
     margin-top: 0;
-    background-color: black;
-    border: black solid 1px;
-    padding: 10px 0 10px 0;
-    width: 240px;
-    margin: auto;
-    color: white;
-    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-.btn:hover {
+.btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: background .5s;
+}
+
+.nav {
+    background: #000;
+    height: 80px;
+    width: 100%;
+}
+
+.nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav ul li {
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+}
+
+.btn:hover, .nav ul li:hover {
     background: #117bff;
     cursor: pointer;
     transition: background .5s;
 }
 
-/* Nav */
-.nav {
-    background-color: black;
-}
-
-.nav ul {
-
-    list-style: none;
-    margin: 0 auto;
-    padding: 30px 0;
-    text-align: left;
-    word-spacing: 20px;
-}
-
-.nav li {
-    display: inline;
-    color: white;;
-}
-
-/* Main */
 .main .container {
     margin: 80px auto;
 }
+
 .main img {
     float: left;
-    height: 150px;
-    padding: 30px 50px 10px 0;
+    margin: 50px 80px 50px 0;
 }
 
-
-/* Jumbotron */
 .jumbotron {
-    background: url(../Images/jumbotron_bg.jpg) no-repeat center center fixed;
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+    background-size: cover;
     height: 600px;
-    text-align: right;
 }
 
 .jumbotron .container {
@@ -109,25 +109,34 @@ body {
     top: 220px;
 }
 
-.jumbotron .second_bg_white {
-    color: white;
+.jumbotron h2 {
+    color: #fff;
+    text-align: right;
 }
-.jumbotron .join_link {
-    background-color: black;
-    color: white;
-    padding: 0 10px 0 10px;
-    width: 100px;
-    text-align: center;
+
+.jumbotron p {
+    color: #fff;
+    text-align: right;
+}
+
+.jumbotron .btn {
+    margin: 10px 0 0;
     float: right;
 }
 
-
-/* Footer */
 .footer {
-    font-size: 14px;
+    background: #000;
+    height: 80px;
 }
 
-/* Media Queries */
+.footer p {
+    color: #fff;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+}
+
 @media (max-width: 500px) {
     .header h1 {
         font-size: 50px;
